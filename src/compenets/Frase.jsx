@@ -1,18 +1,32 @@
-import { Card, CardBody } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const Frase = () => {
   return (
     <>
-        <Card className="border-0 fondoNelson">
-            <h1 className="display-6">Nelson Muntz</h1>
-            <hr />
-            <CardBody>
-                <img src="https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FNelsonMuntz.png" alt="" />
+      <section className="my-5">
+        <h2>Nelson Muntz</h2>
+        <hr />
+        <img
+          className="mb-3"
+          src="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FNelsonMuntz.png?1497567511185"
+          alt="Nelson Muntz"
+        />
+        <Card>
+          <Card.Body>
+            <figure>
+              <blockquote className="blockquote">
                 <p>
-                ¡Ja ja ja! ¿Eso es todo lo que tienes? Eres tan predecible que podrías ser la tabla de multiplicar del uno en persona. Sabes, es como si tus acciones estuvieran escritas en las estrellas, tan evidentes como el sol saliendo cada mañana. ¡Vaya, qué desafío es tratar contigo cuando eres tan transparente como el agua en un vaso vacío!
+                  Shoplifting is a victimless crime, like punching someone in
+                  the dark.
                 </p>
-            </CardBody>
+              </blockquote>
+              <figcaption className="blockquote-footer">
+                Nelson Muntz in <cite title="Source Title">The Simpsons</cite>
+              </figcaption>
+            </figure>
+          </Card.Body>
         </Card>
+      </section>
     </>
   );
 };
