@@ -41,7 +41,7 @@ function App() {
           alt=""
         />
         <Frase frasePersonaje={FrasePersonaje}></Frase>
-        <Button className="m-2 btn-dark">Obtener Frase</Button>
+        <Button className="m-2 btn-dark" onClick={consultarAPI}>Obtener Frase</Button>
       </Container>
     </>
   );
